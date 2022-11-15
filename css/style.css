@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+	--bg-color: #ffb703;
+	--input-text-color: #fb8500;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Fira Sans', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+body {
+	background-color: var(--bg-color);
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header {
+	padding: 6rem;
+
+}
+
+section {
+	padding-bottom: 16rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+section label {
+	padding: 1rem 0;
+	font-size: 2rem;
+}
+
+section #inputBinary {
+	padding: .5rem;
+	font-size: 2rem;
+	border: none;
+	border-radius: 0.188rem;
+	outline: none;
+	text-align: right;
+	color: var(--input-text-color);
+}
+
+section #inputBinary:invalid {
+	color: red;
+	text-decoration: line-through;
+	/* border: 0.125rem solid red; */
+}
+
+footer {
+	display: flex;
+	align-items: center;
+	padding: 2rem;
+	gap: 2rem;
+	font-size: 1rem;
+}
+
+footer a {
+	display: flex;
+	gap: .5rem;
+	justify-content: center;
+	align-items: center;
+}
