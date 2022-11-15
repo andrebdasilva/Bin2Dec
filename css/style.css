@@ -36,11 +36,12 @@ section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	gap: 2rem;
 }
 
 
 section label {
-	padding: 1rem 0;
+	/* padding: 1rem 0; */
 	font-size: 2rem;
 }
 
@@ -51,6 +52,7 @@ section #inputBinary {
 	border-radius: 0.188rem;
 	outline: none;
 	text-align: right;
+	width: 10rem;
 	color: var(--input-text-color);
 }
 
@@ -58,6 +60,10 @@ section #inputBinary:invalid {
 	color: red;
 	text-decoration: line-through;
 	/* border: 0.125rem solid red; */
+}
+
+section #error, section #output{
+	display: none;
 }
 
 footer {
